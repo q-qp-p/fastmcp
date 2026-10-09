@@ -1,7 +1,7 @@
 {
   "schema": "fastmcp-maintenance/1",
   "publisher": "fastmcp-actions",
-  "as_of": "2026-10-08T19:16:02Z",
+  "as_of": "2026-10-09T01:10:24Z",
   "automations": [
     {
       "id": "issue-link-gate",
@@ -14,16 +14,10 @@
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/require-issue-link.yml",
       "window": "7d",
       "counts": {
-        "passed": 144,
-        "blocked": 107
+        "passed": 141,
+        "blocked": 105
       },
       "daily": [
-        {
-          "day": "2026-10-02",
-          "succeeded": 4,
-          "failed": 0,
-          "blocked": 2
-        },
         {
           "day": "2026-10-03",
           "succeeded": 8,
@@ -56,9 +50,15 @@
         },
         {
           "day": "2026-10-08",
-          "succeeded": 59,
+          "succeeded": 60,
           "failed": 0,
           "blocked": 9
+        },
+        {
+          "day": "2026-10-09",
+          "succeeded": 0,
+          "failed": 0,
+          "blocked": 0
         }
       ]
     },
@@ -73,16 +73,10 @@
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-label-triage.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 246,
+        "succeeded": 243,
         "failed": 0
       },
       "daily": [
-        {
-          "day": "2026-10-02",
-          "succeeded": 5,
-          "failed": 0,
-          "blocked": 0
-        },
         {
           "day": "2026-10-03",
           "succeeded": 19,
@@ -115,7 +109,13 @@
         },
         {
           "day": "2026-10-08",
-          "succeeded": 54,
+          "succeeded": 56,
+          "failed": 0,
+          "blocked": 0
+        },
+        {
+          "day": "2026-10-09",
+          "succeeded": 0,
           "failed": 0,
           "blocked": 0
         }
@@ -132,16 +132,10 @@
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-dedupe-issues.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 83,
+        "succeeded": 82,
         "failed": 0
       },
       "daily": [
-        {
-          "day": "2026-10-02",
-          "succeeded": 1,
-          "failed": 0,
-          "blocked": 0
-        },
         {
           "day": "2026-10-03",
           "succeeded": 5,
@@ -177,6 +171,12 @@
           "succeeded": 23,
           "failed": 0,
           "blocked": 0
+        },
+        {
+          "day": "2026-10-09",
+          "succeeded": 0,
+          "failed": 0,
+          "blocked": 0
         }
       ]
     },
@@ -191,16 +191,10 @@
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/auto-close-duplicates.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 14,
+        "succeeded": 12,
         "failed": 0
       },
       "daily": [
-        {
-          "day": "2026-10-02",
-          "succeeded": 2,
-          "failed": 0,
-          "blocked": 0
-        },
         {
           "day": "2026-10-03",
           "succeeded": 2,
@@ -234,6 +228,12 @@
         {
           "day": "2026-10-08",
           "succeeded": 2,
+          "failed": 0,
+          "blocked": 0
+        },
+        {
+          "day": "2026-10-09",
+          "succeeded": 0,
           "failed": 0,
           "blocked": 0
         }
@@ -255,12 +255,6 @@
       },
       "daily": [
         {
-          "day": "2026-10-02",
-          "succeeded": 0,
-          "failed": 0,
-          "blocked": 0
-        },
-        {
           "day": "2026-10-03",
           "succeeded": 0,
           "failed": 0,
@@ -295,6 +289,12 @@
           "succeeded": 0,
           "failed": 0,
           "blocked": 0
+        },
+        {
+          "day": "2026-10-09",
+          "succeeded": 0,
+          "failed": 0,
+          "blocked": 0
         }
       ]
     },
@@ -305,20 +305,14 @@
       "cadence": "after each failed PR run",
       "runs_on": "github-actions",
       "state": "ok",
-      "last_ok_day": "2026-10-08",
+      "last_ok_day": "2026-10-09",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-test-failure.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 718,
-        "failed": 25
+        "succeeded": 715,
+        "failed": 24
       },
       "daily": [
-        {
-          "day": "2026-10-02",
-          "succeeded": 0,
-          "failed": 0,
-          "blocked": 0
-        },
         {
           "day": "2026-10-03",
           "succeeded": 0,
@@ -327,8 +321,8 @@
         },
         {
           "day": "2026-10-04",
-          "succeeded": 261,
-          "failed": 7,
+          "succeeded": 248,
+          "failed": 6,
           "blocked": 0
         },
         {
@@ -351,8 +345,14 @@
         },
         {
           "day": "2026-10-08",
-          "succeeded": 160,
+          "succeeded": 168,
           "failed": 2,
+          "blocked": 0
+        },
+        {
+          "day": "2026-10-09",
+          "succeeded": 2,
+          "failed": 0,
           "blocked": 0
         }
       ]
@@ -363,21 +363,15 @@
       "what": "`/marvin` on an issue or PR asks the bot to act; `/tidy` hides resolved review threads",
       "cadence": "on a maintainer's comment",
       "runs_on": "github-actions",
-      "state": "degraded",
-      "last_ok_day": null,
+      "state": "ok",
+      "last_ok_day": "2026-10-08",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-comment-on-issue.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 97,
-        "failed": 44
+        "succeeded": 95,
+        "failed": 43
       },
       "daily": [
-        {
-          "day": "2026-10-02",
-          "succeeded": 6,
-          "failed": 1,
-          "blocked": 0
-        },
         {
           "day": "2026-10-03",
           "succeeded": 5,
@@ -410,8 +404,14 @@
         },
         {
           "day": "2026-10-08",
-          "succeeded": 2,
+          "succeeded": 6,
           "failed": 3,
+          "blocked": 0
+        },
+        {
+          "day": "2026-10-09",
+          "succeeded": 0,
+          "failed": 0,
           "blocked": 0
         }
       ]
@@ -427,16 +427,10 @@
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/run-upgrade-checks.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 6,
+        "succeeded": 5,
         "failed": 1
       },
       "daily": [
-        {
-          "day": "2026-10-02",
-          "succeeded": 1,
-          "failed": 0,
-          "blocked": 0
-        },
         {
           "day": "2026-10-03",
           "succeeded": 1,
@@ -472,6 +466,12 @@
           "succeeded": 1,
           "failed": 0,
           "blocked": 0
+        },
+        {
+          "day": "2026-10-09",
+          "succeeded": 0,
+          "failed": 0,
+          "blocked": 0
         }
       ]
     },
@@ -482,20 +482,14 @@
       "cadence": "on each release",
       "runs_on": "github-actions",
       "state": "ok",
-      "last_ok_day": "2026-10-04",
+      "last_ok_day": "2026-10-08",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/publish-fastmcp-slim.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 8,
+        "succeeded": 12,
         "failed": 0
       },
       "daily": [
-        {
-          "day": "2026-10-02",
-          "succeeded": 0,
-          "failed": 0,
-          "blocked": 0
-        },
         {
           "day": "2026-10-03",
           "succeeded": 0,
@@ -528,6 +522,12 @@
         },
         {
           "day": "2026-10-08",
+          "succeeded": 4,
+          "failed": 0,
+          "blocked": 0
+        },
+        {
+          "day": "2026-10-09",
           "succeeded": 0,
           "failed": 0,
           "blocked": 0
@@ -541,20 +541,14 @@
       "cadence": "on each docs publication",
       "runs_on": "github-actions",
       "state": "ok",
-      "last_ok_day": "2026-10-04",
+      "last_ok_day": "2026-10-08",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/deploy-docs.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 2,
+        "succeeded": 3,
         "failed": 0
       },
       "daily": [
-        {
-          "day": "2026-10-02",
-          "succeeded": 0,
-          "failed": 0,
-          "blocked": 0
-        },
         {
           "day": "2026-10-03",
           "succeeded": 0,
@@ -587,6 +581,12 @@
         },
         {
           "day": "2026-10-08",
+          "succeeded": 1,
+          "failed": 0,
+          "blocked": 0
+        },
+        {
+          "day": "2026-10-09",
           "succeeded": 0,
           "failed": 0,
           "blocked": 0
@@ -641,7 +641,7 @@
           "number": 5169,
           "title": "fix(server): fall back to the highest authorized version on direct lookup",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5169",
-          "age_days": 19
+          "age_days": 20
         },
         {
           "number": 5190,
@@ -653,7 +653,7 @@
           "number": 5195,
           "title": "Fix TokenCache handling for expired access tokens",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5195",
-          "age_days": 16
+          "age_days": 17
         }
       ],
       "id": "contributor-queue",
@@ -662,34 +662,34 @@
       "cadence": "twice daily",
       "runs_on": "github-actions",
       "state": "ok",
-      "last_ok_day": "2026-10-08",
+      "last_ok_day": "2026-10-09",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/pulls?q=is%3Apr+is%3Aopen+label%3Amissing-issue-link",
       "window": "now",
       "counts": {
         "waiting": 57,
         "oldest_days": 29,
-        "waiting_over_7_days": 13
+        "waiting_over_7_days": 14
       }
     }
   ],
   "main": {
-    "sha": "f3cf3ee6b0722e3b4da42031e2bb51b7cc12b1fa",
-    "url": "https://github.com/PrefectHQ/fastmcp/commit/f3cf3ee6b0722e3b4da42031e2bb51b7cc12b1fa",
+    "sha": "51b618f7d5970d2870dc351081e16600f371291f",
+    "url": "https://github.com/PrefectHQ/fastmcp/commit/51b618f7d5970d2870dc351081e16600f371291f",
     "checks": [
       {
         "name": "Tests",
-        "state": "pending",
-        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/37830120062"
+        "state": "ok",
+        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/37839935491"
       },
       {
         "name": "Run static analysis",
         "state": "ok",
-        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/37830119829"
+        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/37839935666"
       },
       {
         "name": "CodeQL",
         "state": "ok",
-        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/37830118542"
+        "url": "https://github.com/PrefectHQ/fastmcp/actions/runs/37839932879"
       }
     ]
   },
@@ -707,7 +707,7 @@
   "attention": {
     "schema": "fastmcp-attention/1",
     "repo": "PrefectHQ/fastmcp",
-    "as_of": "2026-10-08T19:13:52.990111+00:00",
+    "as_of": "2026-10-09T01:08:26.195871+00:00",
     "profile": "public-issue-signals",
     "judge": "jev",
     "assessment_model": "jev:jev-latest",
@@ -22804,7 +22804,7 @@
         "number": 4768,
         "title": "Add MCPBundles Connect Auth provider (McpbundlesConnectProvider)",
         "url": "https://github.com/PrefectHQ/fastmcp/issues/4768",
-        "updated_at": "2026-08-23T12:03:59+00:00",
+        "updated_at": "2026-10-08T20:55:46+00:00",
         "score": 0.56,
         "kind": "feature",
         "judged": true,
