@@ -1,7 +1,7 @@
 {
   "schema": "fastmcp-maintenance/1",
   "publisher": "fastmcp-actions",
-  "as_of": "2026-10-10T00:42:22Z",
+  "as_of": "2026-10-10T17:46:21Z",
   "automations": [
     {
       "id": "issue-link-gate",
@@ -10,12 +10,12 @@
       "cadence": "on each external PR change and each issue assignment",
       "runs_on": "github-actions",
       "state": "ok",
-      "last_ok_day": "2026-10-09",
+      "last_ok_day": "2026-10-10",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/require-issue-link.yml",
       "window": "7d",
       "counts": {
-        "passed": 136,
-        "blocked": 101
+        "passed": 138,
+        "blocked": 103
       },
       "daily": [
         {
@@ -56,9 +56,9 @@
         },
         {
           "day": "2026-10-10",
-          "succeeded": 0,
+          "succeeded": 2,
           "failed": 0,
-          "blocked": 0
+          "blocked": 2
         }
       ]
     },
@@ -69,11 +69,11 @@
       "cadence": "on each new issue or PR",
       "runs_on": "github-actions",
       "state": "ok",
-      "last_ok_day": "2026-10-09",
+      "last_ok_day": "2026-10-10",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-label-triage.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 240,
+        "succeeded": 246,
         "failed": 0
       },
       "daily": [
@@ -115,7 +115,7 @@
         },
         {
           "day": "2026-10-10",
-          "succeeded": 0,
+          "succeeded": 6,
           "failed": 0,
           "blocked": 0
         }
@@ -128,11 +128,11 @@
       "cadence": "on each new issue",
       "runs_on": "github-actions",
       "state": "ok",
-      "last_ok_day": "2026-10-09",
+      "last_ok_day": "2026-10-10",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-dedupe-issues.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 86,
+        "succeeded": 89,
         "failed": 0
       },
       "daily": [
@@ -174,7 +174,7 @@
         },
         {
           "day": "2026-10-10",
-          "succeeded": 0,
+          "succeeded": 3,
           "failed": 0,
           "blocked": 0
         }
@@ -187,11 +187,11 @@
       "cadence": "daily",
       "runs_on": "github-actions",
       "state": "ok",
-      "last_ok_day": "2026-10-09",
+      "last_ok_day": "2026-10-10",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/auto-close-duplicates.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 12,
+        "succeeded": 14,
         "failed": 0
       },
       "daily": [
@@ -233,7 +233,7 @@
         },
         {
           "day": "2026-10-10",
-          "succeeded": 0,
+          "succeeded": 2,
           "failed": 0,
           "blocked": 0
         }
@@ -309,14 +309,14 @@
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-test-failure.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 716,
-        "failed": 25
+        "succeeded": 717,
+        "failed": 24
       },
       "daily": [
         {
           "day": "2026-10-04",
-          "succeeded": 210,
-          "failed": 5,
+          "succeeded": 207,
+          "failed": 4,
           "blocked": 0
         },
         {
@@ -351,7 +351,7 @@
         },
         {
           "day": "2026-10-10",
-          "succeeded": 2,
+          "succeeded": 6,
           "failed": 0,
           "blocked": 0
         }
@@ -364,12 +364,12 @@
       "cadence": "on a maintainer's comment",
       "runs_on": "github-actions",
       "state": "degraded",
-      "last_ok_day": null,
+      "last_ok_day": "2026-10-10",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/marvin-comment-on-issue.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 90,
-        "failed": 45
+        "succeeded": 92,
+        "failed": 52
       },
       "daily": [
         {
@@ -410,8 +410,8 @@
         },
         {
           "day": "2026-10-10",
-          "succeeded": 0,
-          "failed": 0,
+          "succeeded": 2,
+          "failed": 7,
           "blocked": 0
         }
       ]
@@ -423,11 +423,11 @@
       "cadence": "nightly",
       "runs_on": "github-actions",
       "state": "ok",
-      "last_ok_day": "2026-10-09",
+      "last_ok_day": "2026-10-10",
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/actions/workflows/run-upgrade-checks.yml",
       "window": "7d",
       "counts": {
-        "succeeded": 5,
+        "succeeded": 6,
         "failed": 1
       },
       "daily": [
@@ -469,7 +469,7 @@
         },
         {
           "day": "2026-10-10",
-          "succeeded": 0,
+          "succeeded": 1,
           "failed": 0,
           "blocked": 0
         }
@@ -599,37 +599,37 @@
           "number": 5051,
           "title": "fix(openapi): flatten discriminator mappings nested in request bodies",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5051",
-          "age_days": 30
+          "age_days": 31
         },
         {
           "number": 5063,
           "title": "Raise ToolError when a tool with an output schema returns an unserializable value",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5063",
-          "age_days": 28
+          "age_days": 29
         },
         {
           "number": 5091,
           "title": "fix(openapi): serialize header and path parameters per the simple style",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5091",
-          "age_days": 26
+          "age_days": 27
         },
         {
           "number": 5095,
           "title": "fix: honor Claude Code POSIX project paths on Windows",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5095",
-          "age_days": 26
+          "age_days": 27
         },
         {
           "number": 5103,
           "title": "Honor server.disable() when a tool is called by hashed backend name",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5103",
-          "age_days": 25
+          "age_days": 26
         },
         {
           "number": 5136,
           "title": "docs: clarify context state lifetime across protocol modes",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5136",
-          "age_days": 23
+          "age_days": 24
         },
         {
           "number": 5169,
@@ -641,7 +641,7 @@
           "number": 5190,
           "title": "Fall back to the client timeout when resolving claimed results",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5190",
-          "age_days": 18
+          "age_days": 19
         },
         {
           "number": 5195,
@@ -653,7 +653,7 @@
           "number": 5234,
           "title": "fix(json-schema): apply a Draft-4 boolean exclusive bound to its sibling",
           "url": "https://github.com/PrefectHQ/fastmcp/pull/5234",
-          "age_days": 16
+          "age_days": 17
         }
       ],
       "id": "contributor-queue",
@@ -666,8 +666,8 @@
       "evidence_url": "https://github.com/PrefectHQ/fastmcp/pulls?q=is%3Apr+is%3Aopen+label%3Amissing-issue-link",
       "window": "now",
       "counts": {
-        "waiting": 58,
-        "oldest_days": 30,
+        "waiting": 59,
+        "oldest_days": 31,
         "waiting_over_7_days": 14
       }
     }
@@ -712,12 +712,12 @@
   "attention": {
     "schema": "fastmcp-attention/1",
     "repo": "PrefectHQ/fastmcp",
-    "as_of": "2026-10-10T00:40:31.352867+00:00",
+    "as_of": "2026-10-10T17:44:46.152212+00:00",
     "profile": "public-issue-signals",
     "judge": "jev",
     "assessment_model": "jev:jev-latest",
-    "judged": 330,
-    "examined": 330,
+    "judged": 332,
+    "examined": 333,
     "has_more": false,
     "selection": "newest open issues",
     "items": [
@@ -6924,6 +6924,89 @@
         "linked_prs": []
       },
       {
+        "number": 5587,
+        "title": "Tool renaming drops definitions referenced by escaped JSON Pointers",
+        "url": "https://github.com/PrefectHQ/fastmcp/issues/5587",
+        "updated_at": "2026-10-08T05:21:21+00:00",
+        "score": 7.04,
+        "kind": "bug",
+        "judged": true,
+        "assessment": {
+          "kind": {
+            "bug": 1.0,
+            "feature": 0.0,
+            "question": 0.0,
+            "regression": 0.0,
+            "docs": 0.0,
+            "other": 0.0
+          },
+          "repro": 0.97,
+          "actionable": 1.0,
+          "severity": 0.69,
+          "security": 0.04,
+          "spec": 0.6,
+          "downstream": 0.17
+        },
+        "input_digest": "709fc65eec8da2878d9ca76050800fa32915223ae3dd098898b9d610bcb58977",
+        "reasons": [
+          {
+            "signal": "severity",
+            "text": "potential impact",
+            "contribution": 2.07
+          },
+          {
+            "signal": "neglect",
+            "text": "awaiting maintainer reply",
+            "contribution": 1.5
+          },
+          {
+            "signal": "handled",
+            "text": "assigned or linked to a fix",
+            "contribution": -1.5
+          },
+          {
+            "signal": "repro",
+            "text": "reproduction provided",
+            "contribution": 1.46
+          },
+          {
+            "signal": "actionable",
+            "text": "actionable report",
+            "contribution": 1.0
+          },
+          {
+            "signal": "regression",
+            "text": "possible regression",
+            "contribution": 0.94
+          },
+          {
+            "signal": "spec",
+            "text": "protocol conformance",
+            "contribution": 0.6
+          },
+          {
+            "signal": "release_proximity",
+            "text": "reported near a relevant release",
+            "contribution": 0.56
+          },
+          {
+            "signal": "downstream",
+            "text": "downstream integration affected",
+            "contribution": 0.26
+          },
+          {
+            "signal": "security",
+            "text": "security-sensitive report",
+            "contribution": 0.16
+          }
+        ],
+        "maintainer_replied": false,
+        "assigned": false,
+        "linked_prs": [
+          5588
+        ]
+      },
+      {
         "number": 4907,
         "title": "Client .data returns bytes and Path as strings; other complex types hydrate",
         "url": "https://github.com/PrefectHQ/fastmcp/issues/4907",
@@ -8041,7 +8124,7 @@
         "number": 5098,
         "title": "from_openapi: cookie parameters with array/object values send Python repr strings",
         "url": "https://github.com/PrefectHQ/fastmcp/issues/5098",
-        "updated_at": "2026-10-09T08:31:42+00:00",
+        "updated_at": "2026-10-10T04:42:34+00:00",
         "score": 6.49,
         "kind": "bug",
         "judged": true,
@@ -9075,6 +9158,84 @@
         "assigned": true,
         "linked_prs": [
           4881
+        ]
+      },
+      {
+        "number": 5655,
+        "title": "Client drops typed additional properties from structured tool results",
+        "url": "https://github.com/PrefectHQ/fastmcp/issues/5655",
+        "updated_at": "2026-10-10T10:07:46+00:00",
+        "score": 6.31,
+        "kind": "bug",
+        "judged": true,
+        "assessment": {
+          "kind": {
+            "bug": 1.0,
+            "regression": 0.0,
+            "feature": 0.0,
+            "question": 0.0,
+            "docs": 0.0,
+            "other": 0.0
+          },
+          "repro": 0.97,
+          "actionable": 1.0,
+          "severity": 0.9166666666666666,
+          "security": 0.03,
+          "spec": 0.53,
+          "downstream": 0.11
+        },
+        "input_digest": "61ea00be884eac7f23375e0881650dffee75c9f2b7c33fc5637c1bbcd056c204",
+        "reasons": [
+          {
+            "signal": "severity",
+            "text": "potential impact",
+            "contribution": 2.75
+          },
+          {
+            "signal": "handled",
+            "text": "assigned or linked to a fix",
+            "contribution": -1.5
+          },
+          {
+            "signal": "repro",
+            "text": "reproduction provided",
+            "contribution": 1.46
+          },
+          {
+            "signal": "regression",
+            "text": "possible regression",
+            "contribution": 1.12
+          },
+          {
+            "signal": "actionable",
+            "text": "actionable report",
+            "contribution": 1.0
+          },
+          {
+            "signal": "release_proximity",
+            "text": "reported near a relevant release",
+            "contribution": 0.67
+          },
+          {
+            "signal": "spec",
+            "text": "protocol conformance",
+            "contribution": 0.53
+          },
+          {
+            "signal": "downstream",
+            "text": "downstream integration affected",
+            "contribution": 0.17
+          },
+          {
+            "signal": "security",
+            "text": "security-sensitive report",
+            "contribution": 0.12
+          }
+        ],
+        "maintainer_replied": false,
+        "assigned": false,
+        "linked_prs": [
+          5656
         ]
       },
       {
@@ -11268,84 +11429,6 @@
         "maintainer_replied": false,
         "assigned": false,
         "linked_prs": []
-      },
-      {
-        "number": 5587,
-        "title": "Tool renaming drops definitions referenced by escaped JSON Pointers",
-        "url": "https://github.com/PrefectHQ/fastmcp/issues/5587",
-        "updated_at": "2026-10-08T05:21:21+00:00",
-        "score": 5.54,
-        "kind": "bug",
-        "judged": true,
-        "assessment": {
-          "kind": {
-            "bug": 1.0,
-            "feature": 0.0,
-            "question": 0.0,
-            "regression": 0.0,
-            "docs": 0.0,
-            "other": 0.0
-          },
-          "repro": 0.97,
-          "actionable": 1.0,
-          "severity": 0.69,
-          "security": 0.04,
-          "spec": 0.6,
-          "downstream": 0.17
-        },
-        "input_digest": "709fc65eec8da2878d9ca76050800fa32915223ae3dd098898b9d610bcb58977",
-        "reasons": [
-          {
-            "signal": "severity",
-            "text": "potential impact",
-            "contribution": 2.07
-          },
-          {
-            "signal": "handled",
-            "text": "assigned or linked to a fix",
-            "contribution": -1.5
-          },
-          {
-            "signal": "repro",
-            "text": "reproduction provided",
-            "contribution": 1.46
-          },
-          {
-            "signal": "actionable",
-            "text": "actionable report",
-            "contribution": 1.0
-          },
-          {
-            "signal": "regression",
-            "text": "possible regression",
-            "contribution": 0.94
-          },
-          {
-            "signal": "spec",
-            "text": "protocol conformance",
-            "contribution": 0.6
-          },
-          {
-            "signal": "release_proximity",
-            "text": "reported near a relevant release",
-            "contribution": 0.56
-          },
-          {
-            "signal": "downstream",
-            "text": "downstream integration affected",
-            "contribution": 0.26
-          },
-          {
-            "signal": "security",
-            "text": "security-sensitive report",
-            "contribution": 0.16
-          }
-        ],
-        "maintainer_replied": false,
-        "assigned": false,
-        "linked_prs": [
-          5588
-        ]
       },
       {
         "number": 5524,
@@ -25053,6 +25136,34 @@
         "linked_prs": []
       },
       {
+        "number": 5657,
+        "title": "Root object schemas ignore const and enum constraints",
+        "url": "https://github.com/PrefectHQ/fastmcp/issues/5657",
+        "updated_at": "2026-10-10T17:00:10+00:00",
+        "score": -0.84,
+        "kind": "unclassified",
+        "judged": false,
+        "assessment": null,
+        "input_digest": "61c8cdc400daa0985798460f788c99013f359fcee1de9b62ea6f0be1307c68fd",
+        "reasons": [
+          {
+            "signal": "handled",
+            "text": "assigned or linked to a fix",
+            "contribution": -1.5
+          },
+          {
+            "signal": "release_proximity",
+            "text": "reported near a relevant release",
+            "contribution": 0.66
+          }
+        ],
+        "maintainer_replied": false,
+        "assigned": false,
+        "linked_prs": [
+          5658
+        ]
+      },
+      {
         "number": 2770,
         "title": "Remove --isolated from ty pre-commit checks?",
         "url": "https://github.com/PrefectHQ/fastmcp/issues/2770",
@@ -26460,6 +26571,72 @@
             "signal": "downstream",
             "text": "downstream integration affected",
             "contribution": 0.08
+          }
+        ],
+        "maintainer_replied": false,
+        "assigned": false,
+        "linked_prs": []
+      },
+      {
+        "number": 5654,
+        "title": "your brain fucked to change import syntax???",
+        "url": "https://github.com/PrefectHQ/fastmcp/issues/5654",
+        "updated_at": "2026-10-10T06:37:10+00:00",
+        "score": -7.48,
+        "kind": "question",
+        "judged": true,
+        "assessment": {
+          "kind": {
+            "bug": 0.0,
+            "regression": 0.0,
+            "feature": 0.05,
+            "question": 0.92,
+            "docs": 0.0,
+            "other": 0.03
+          },
+          "repro": 0.03,
+          "actionable": 0.02,
+          "severity": 0.02,
+          "security": 0.01,
+          "spec": 0.11,
+          "downstream": 0.05
+        },
+        "input_digest": "e6736b3c72c45af5a9f257192d9e85fe18c4033dbd408fa6ea7248b693dc16dd",
+        "reasons": [
+          {
+            "signal": "dismissed",
+            "text": "existing triage label",
+            "contribution": -8.0
+          },
+          {
+            "signal": "release_proximity",
+            "text": "reported near a relevant release",
+            "contribution": 0.68
+          },
+          {
+            "signal": "question",
+            "text": "usage question",
+            "contribution": -0.46
+          },
+          {
+            "signal": "spec",
+            "text": "protocol conformance",
+            "contribution": 0.11
+          },
+          {
+            "signal": "downstream",
+            "text": "downstream integration affected",
+            "contribution": 0.08
+          },
+          {
+            "signal": "severity",
+            "text": "potential impact",
+            "contribution": 0.06
+          },
+          {
+            "signal": "feature",
+            "text": "enhancement request",
+            "contribution": -0.05
           }
         ],
         "maintainer_replied": false,
